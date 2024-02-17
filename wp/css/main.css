@@ -1,6 +1,6 @@
 @font-face {
 	font-family:HanyiSongke;
-	src:url("https://cdn.jsdelivr.net/gh/ligoudan929/imghost/font/hanyifangsong.ttf");
+	src:url("../font/hanyifangsong.ttf");
 }
 * {
 	font-family:HanyiSongke !important;
