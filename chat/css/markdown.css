@@ -1,0 +1,151 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-anchor: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+/*IE 10+ */
+* {
+  -ms-overflow-style: none;
+}
+/* Firefox */
+* {
+  scrollbar-width: none;
+  /* overflow: -moz-scrollbars-none; */
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+
+pre {
+  position: relative;
+  margin-bottom: 24px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+pre:hover>.hljs-copy {
+  display: inline!important;
+}
+
+.hljs {
+  color: #abb2bf!important;
+  display: block;
+  padding: 12px 12px 12px 12px;
+  overflow-y: auto;
+  font-weight: 300;
+  font-family: 'Inconsolata', 'Microsoft YaHei', sans-serif!important;
+  font-size: 14px;
+  line-height: 24px;
+  background: #fff!important;
+  border: 1px solid rgb(116, 230, 212);
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+.hljs-params{
+  color: #61aeee;
+}
+
+.hljs>code {
+  width: 100%;
+  display: block;
+  overflow-x: scroll;
+  color: #302b63;
+  font-family: 'Inconsolata', 'Microsoft YaHei', sans-serif!important;
+  font-size: 15px;
+}
+.hljs>code>span {
+  padding-right: 5px;
+  font-family: 'Inconsolata', 'Microsoft YaHei', sans-serif!important;
+}
+
+.hljs>code::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* 滚动条小方块 */
+.hljs>code::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: all .3s;
+}
+
+/* 滚动条轨道 */
+.hljs>code::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.hljs:hover>code::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 5px #5b86e5;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  opacity: 1;
+}
+
+.hljs:hover>code::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+
+.hljs-copy {
+  display: none;
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  font-size: 12px;
+  font-style:normal;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.hljs-copy:hover {
+  color: #000;
+}
+
+.hljs-line-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 30px;
+  height: 100%;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 12px 4px 12px 0;
+  border-right: 1px dashed #aec6fa;
+  border-radius: 3px 0 0 3px;
+  background-color: #eee;
+  text-align: right;
+  font-family: 'Fredericka the Great', Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #000;
+  font-weight: 700;
+}
+.hljs-line-num li{
+  color: #000!important;
+  user-select: none!important;
+  margin-top: inherit!important;
+}
+.hljs-line-num li::before{
+  display: none!important;
+
+}
+
+.detail-text img{
+  max-width: 100%;
+}
